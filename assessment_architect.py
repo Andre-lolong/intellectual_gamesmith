@@ -18,3 +18,6 @@ def quiz():
     file = open("Questionnaire", "a")
 
     while True:
+        # ask the question
+        question = input("Enter your desired quesiton: ")
+        
