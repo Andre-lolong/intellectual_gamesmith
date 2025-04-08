@@ -19,7 +19,7 @@ def quiz():
 
     while True:
         # ask the question
-        question = input("Enter your desired quesiton: ")
+        question = input("Enter your desired question: ")
         # ask four possible answers (a, b, c, d)
         a = input("Enter choice letter a: ")
         b = input("Enter choice letter b: ")
@@ -43,4 +43,5 @@ def quiz():
 
         print("Your question(s) and choice(s) as well as the right answer has been added to the file \n")
         print("Your questionnaire is now ready!")
-        
+
+quiz()
