@@ -42,7 +42,7 @@ def quiz():
             break
     # close the file
     file.close()
-    print("Your question(s) and choice(s) as well as the right answer has been added to the file \n")
+    print("Your question(s) and choice(s) as well as the right answer has been added to the file")
     print("Your questionnaire is now ready!")
 
 quiz()
