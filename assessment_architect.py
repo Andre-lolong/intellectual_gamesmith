@@ -13,3 +13,6 @@
 
 # Close the file
 # Tell the user that the multiple-choice questionnaire has been made  
+
+def quiz():
+    file = open("Questionnaire", "a")
