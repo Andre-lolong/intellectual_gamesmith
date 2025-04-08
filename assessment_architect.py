@@ -20,4 +20,8 @@ def quiz():
     while True:
         # ask the question
         question = input("Enter your desired quesiton: ")
-        
+        # ask four possible answers (a, b, c, d)
+        a = input("Enter choice letter a: ")
+        b = input("Enter choice letter b: ")
+        c = input("Enter choice letter c: ")
+        d = input("Enter choice letter d:")
