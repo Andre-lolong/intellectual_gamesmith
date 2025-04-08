@@ -37,4 +37,10 @@ def quiz():
         file.write("correct answer: " + correct + "\n")
         print(" ")
 
+        continunity = input("Do you want to add another question (y/n): ")
+        if continunity.lower() != "y":
+            break
+
+        print("Your question(s) and choice(s) as well as the right answer has been added to the file \n")
+        print("Your questionnaire is now ready!")
         
