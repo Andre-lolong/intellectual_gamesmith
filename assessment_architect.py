@@ -27,3 +27,14 @@ def quiz():
         d = input("Enter choice letter d:")
         # ask the correct answer
         correct = input("Which letter is correct among the choices a, b, c, and d?: ")
+
+        # write the inputs to file
+        file.write("Question: " + question + "\n")
+        file.write("a.): " + a + "\n")
+        file.write("b.): " + b + "\n")
+        file.write("c.): " + c + "\n")
+        file.write("d.): " + d + "\n")
+        file.write("correct answer: " + correct + "\n")
+        print(" ")
+
+        
