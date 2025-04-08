@@ -15,11 +15,11 @@
 # Tell the user that the multiple-choice questionnaire has been made  
 
 def quiz():
-    file = open("Questionnaire", "a")
+    file = open("Questionnaire.txt", "a")
 
     while True:
         # ask the question
-        question = input("Enter your desired question: ")
+        question = input("Enter your desired question: ").capitalize()
         # ask four possible answers (a, b, c, d)
         a = input("Enter choice letter a: ")
         b = input("Enter choice letter b: ")
@@ -27,7 +27,6 @@ def quiz():
         d = input("Enter choice letter d:")
         # ask the correct answer
         correct = input("Which letter is correct among the choices a, b, c, and d?: ")
-
         # write the inputs to file
         file.write("Question: " + question + "\n")
         file.write("a.): " + a + "\n")
@@ -37,7 +36,7 @@ def quiz():
         file.write("correct answer: " + correct + "\n")
         print(" ")
 
-        continunity = input("Do you want to add another question (y/n): ")
+        continunity = input("Do you want to add another question? (y/n): ")
         if continunity.lower() != "y":
             break
     # close the file
