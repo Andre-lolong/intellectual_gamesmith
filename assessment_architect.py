@@ -25,3 +25,5 @@ def quiz():
         b = input("Enter choice letter b: ")
         c = input("Enter choice letter c: ")
         d = input("Enter choice letter d:")
+        # ask the correct answer
+        correct = input("Which letter is correct among the choices a, b, c, and d?: ")
