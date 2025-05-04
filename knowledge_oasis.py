@@ -134,4 +134,8 @@ class KnowledgeOasis:
         self.user_answer = tk.StringVar()
         self.feedback_label = tk.Label(root, text="")
         self.feedback_label.pack(pady=5)
-        
+
+        if not self.questions:
+            messagebox.showerror("Error", "No questions found in the file.")
+            self.root.destroy()
+            return
