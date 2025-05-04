@@ -139,3 +139,8 @@ class KnowledgeOasis:
             messagebox.showerror("Error", "No questions found in the file.")
             self.root.destroy()
             return
+        
+        random.shuffle(self.questions)
+
+        self.question_label = tk.Label(root, text="", wraplength=400, justify="left")
+        self.question_label.pack(pady=10)
