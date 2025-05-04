@@ -222,3 +222,11 @@ class KnowledgeOasis:
         self.current_question_index += 1
         self.load_current_question()
 
+    def show_results(self):
+        messagebox.showinfo("Quiz Finished", f"Your final score is: {self.score}/{len(self.questions)}")
+        self.root.destroy()
+
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = KnowledgeOasis(root)
+    root.mainloop()
