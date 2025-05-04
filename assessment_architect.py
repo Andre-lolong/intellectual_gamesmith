@@ -15,7 +15,7 @@
 # Tell the user that the multiple-choice questionnaire has been made  
 
 def quiz():
-    with open("Questionnaire.txt", "w") as file:
+    with open("Questionnaire.txt", "a") as file:
          while True:
             # ask the question
             question = input("Enter your desired question: ").capitalize()
