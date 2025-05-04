@@ -1,0 +1,30 @@
+Question: What is 1+1?
+a.): 1
+b.): 2
+c.): 3\
+d.): 4
+correct answer: b
+Question: & c:/users/andre/appdata/local/programs/python/python313/python.exe c:/users/andre/intellectual_gamesmith/assessment_architect.py
+a.): & C:/Users/Andre/AppData/Local/Programs/Python/Python313/python.exe c:/Users/Andre/Intellectual_Gamesmith/assessment_architect.py
+b.): & C:/Users/Andre/AppData/Local/Programs/Python/Python313/python.exe c:/Users/Andre/Intellectual_Gamesmith/assessment_architect.py
+c.): & C:/Users/Andre/AppData/Local/Programs/Python/Python313/python.exe c:/Users/Andre/Intellectual_Gamesmith/assessment_architect.py
+d.): & C:/Users/Andre/AppData/Local/Programs/Python/Python313/python.exe c:/Users/Andre/Intellectual_Gamesmith/assessment_architect.py
+correct answer: & C:/Users/Andre/AppData/Local/Programs/Python/Python313/python.exe c:/Users/Andre/Intellectual_Gamesmith/assessment_architect.py
+Question: What is 1 + 1 = ?
+a.): a
+b.): b
+c.): c
+d.): 2
+correct answer: d
+Question: & c:/users/andre/appdata/local/programs/python/python313/python.exe c:/users/andre/intellectual_gamesmith/assessment_architect.py
+a.): a
+b.): a
+c.): s
+d.): s
+correct answer: s
+Question: Hi
+a.): a
+b.): s
+c.): d
+d.): f
+correct answer: a
