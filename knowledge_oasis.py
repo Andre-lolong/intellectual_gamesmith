@@ -125,4 +125,13 @@ from tkinter import messagebox
 import random
 
 class KnowledgeOasis:
-    
+    def __init__(self, root):
+        self.root = root
+        self.root.title("Knowledge Oasis")
+        self.questions = self.load_questions("Questionnaire.txt")
+        self.current_question_index = 0
+        self.score = 0
+        self.user_answer = tk.StringVar()
+        self.feedback_label = tk.Label(root, text="")
+        self.feedback_label.pack(pady=5)
+        
