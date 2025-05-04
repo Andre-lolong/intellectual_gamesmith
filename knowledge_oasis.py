@@ -218,4 +218,7 @@ class KnowledgeOasis:
 
             self.next_button.config(state=tk.NORMAL)
 
-  
+    def next_question(self):
+        self.current_question_index += 1
+        self.load_current_question()
+
