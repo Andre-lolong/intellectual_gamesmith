@@ -119,3 +119,7 @@
 #  #CREATE an instance of KnowledgeOasis with root
 #  #START the Tkinter event loop
 #END IF
+
+import tkinter as tk
+from tkinter import messagebox
+import random
