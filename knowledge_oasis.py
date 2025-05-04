@@ -144,3 +144,14 @@ class KnowledgeOasis:
 
         self.question_label = tk.Label(root, text="", wraplength=400, justify="left")
         self.question_label.pack(pady=10)
+
+        self.radio_buttons = []
+        for i in range(4):
+            radio = tk.Radiobutton(root, text="", variable=self.user_answer, value=chr(ord('a') + i), command=self.check_answer)
+            self.radio_buttons.append(radio)
+            radio.pack(anchor="w", padx=20)
+
+        self.next_button = tk.Button(root, text="Next Question", command=self.next_question, state=tk.DISABLED)
+        self.next_button.pack(pady=10)
+
+        self.load_current_question()
