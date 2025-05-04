@@ -155,3 +155,35 @@ class KnowledgeOasis:
         self.next_button.pack(pady=10)
 
         self.load_current_question()
+
+    def load_questions(self, filename):
+        try:
+            with open(filename, "r") as file:
+                lines = file.readlines()
+
+            questions = []
+            i = 0
+            while  i < len(lines):
+                if lines[i].startswith("Question:"):
+                    question = lines[i].strip().replace("Question: ", "")
+                    choice_a = lines[i+1].strip().replace("a.): ", "")
+                    choice_b = lines[i+2].strip().replace("b.): ", "")
+                    choice_c = lines[i+3].strip().replace("c.): ", "")
+                    choice_d = lines[i+4].strip().replace("d.): ", "")
+                    correct = lines[i+5].strip().replace("correct answer: ", "").lower()
+                    questions.append({
+                        "question": question,
+                        "choices": {"a": choice_a, "b": choice_b, "c": choice_c, "d": choice_d},
+                        "correct": correct
+                    })
+                    i += 6
+                else:
+                    i += 1
+            return questions
+        except FileNotFoundError:
+            messagebox.showerror("Error", f"The file '{filename}' was not found.")
+            return []
+        except Exception as e:
+            messagebox.showerror("Error", f"An error occurred while loading questions: {str(e)}")
+            return []
+  
