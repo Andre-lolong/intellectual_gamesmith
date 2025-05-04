@@ -4,3 +4,27 @@ b.): 4
 c.): 6
 d.): 8
 correct answer: b
+Question: Anong hayop ang mataas kapag nakaupo at mababa naman kapag nakatayo?
+a.): pusa
+b.): baboy
+c.): aso
+d.): kambing
+correct answer: c
+Question: Do we live on a flat earth?
+a.): yes
+b.): no
+c.): maybe
+d.): I don't know
+correct answer: b
+Question: How many colors are there in a rainbow?
+a.): 1
+b.): 4
+c.): 6
+d.): 7
+correct answer: d
+Question: What is the largest animal in the world?
+a.): cat
+b.): dog
+c.): blue whale
+d.): lion
+correct answer: c
