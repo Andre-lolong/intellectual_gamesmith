@@ -203,4 +203,19 @@ class KnowledgeOasis:
         else:
             self.show_results()
 
+    def check_answer(self):
+        selected_answer = self.user_answer.get()
+        if selected_answer:
+            correct_answer = self.questions[self.current_question_index]["correct"]
+            if selected_answer == correct_answer:
+                self.feedback_label.config(text="You are CORRECT! MABUHAY!", fg="green")
+                self.score += 1
+            else:
+                self.feedback_label.config(text=f"I am afraid you are WRONG! The correct answer was: {correct_answer}", fg="red")
+
+            for button in self.radio_buttons:
+                button.config(state=tk.DISABLED, command=None)
+
+            self.next_button.config(state=tk.NORMAL)
+
   
