@@ -186,4 +186,21 @@ class KnowledgeOasis:
         except Exception as e:
             messagebox.showerror("Error", f"An error occurred while loading questions: {str(e)}")
             return []
+        
+    def load_current_question(self):
+        if self.current_question_index < len(self.questions):
+            question_data = self.questions[self.current_question_index]
+            self.question_label.config(text=question_data["question"])
+
+            choices = list(question_data["choices"].values())
+            for i, button in enumerate(self.radio_buttons):
+                button.config(text=f"{chr(ord('a') + i)}) {choices[i]}", state=tk.NORMAL)
+            self.user_answer.set(None)
+            self.feedback_label.config(text="") 
+            self.next_button.config(state=tk.DISABLED, text="Next Question", command=self.next_question)
+            for button in self.radio_buttons:
+                button.config(command=self.check_answer) 
+        else:
+            self.show_results()
+
   
